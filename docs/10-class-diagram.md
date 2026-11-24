@@ -26,7 +26,6 @@
 
 ```mermaid
 classDiagram
-    %% Абстрактний клас
     class User {
         <<abstract>>
         #int id
@@ -40,6 +39,7 @@ classDiagram
         +String studentCardId
         +enroll(Course course) void
         +viewCatalog() List~Course~
+        +getProfile() StudentData
     }
 
     class Teacher {
@@ -73,6 +73,7 @@ classDiagram
         +String status
         +confirm() void
         +cancel() void
+        +findByCourse(Course course) List~Enrollment~
     }
 
     class Payment {
@@ -82,26 +83,21 @@ classDiagram
         +processPayment() boolean
     }
 
-    %% Інтерфейс
     class NotificationService {
         <<interface>>
         +sendEmail(String to, String message) void
     }
 
-    %% Узагальнення (Наслідування)
     User <|-- Student
     User <|-- Teacher
     User <|-- Admin
 
-    %% Композиція (Курс складається з розкладу)
     Course *-- "1..*" Schedule : contains
 
-    %% Асоціації з кратністю
     Student "1" -- "*" Enrollment : makes
     Course "1" -- "*" Enrollment : has
     Enrollment "1" -- "1" Payment : requires
 
-    %% Залежність (Використання інтерфейсу)
     Enrollment ..> NotificationService : uses
 ```
 
