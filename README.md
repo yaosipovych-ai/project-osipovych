@@ -14,6 +14,7 @@
 - [ТЗ та SRS](docs/06-srs.md)
 - [Моделі UML](docs/07-models.md)
 - [UML Діаграми](docs/08-uml-diagrams.md)
+- [Use Case Діаграма](docs/09-use-cases.md)
 
 ## Статус
 Практична робота 6 — розроблено ТЗ та SRS.
