@@ -13,6 +13,7 @@
 - [Вимоги до системи](docs/05-requirements.md)
 - [ТЗ та SRS](docs/06-srs.md)
 - [Моделі UML](docs/07-models.md)
+- [UML Діаграми](docs/08-uml-diagrams.md)
 
 ## Статус
 Практична робота 6 — розроблено ТЗ та SRS.
