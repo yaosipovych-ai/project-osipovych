@@ -16,6 +16,7 @@
 - [UML Діаграми](docs/08-uml-diagrams.md)
 - [Use Case Діаграма](docs/09-use-cases.md)
 - [Діаграма класів](docs/10-class-diagram.md)
+- [Діаграми взаємодії](docs/11-interactions.md)
 
 ## Статус
 Практична робота 6 — розроблено ТЗ та SRS.
