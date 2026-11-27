@@ -1,7 +1,7 @@
 # Практична робота 15. Сценарії користувача, схема переходів і каркаси інтерфейсу
 
 **Проєкт:** Вебзастосунок «CourseHub» — система онлайн-запису на курси
-**Виконав:** Осіпович Ярослав
+**Виконав:** студент Осіпович Ярослав
 
 ---
 
@@ -15,19 +15,19 @@ flowchart TD
     Search --> List[Отримує список курсів]
     List --> Decision{Курс підходить?}
     Decision -- Ні --> Search
-    Decision -- Так --> Card[Сторінка курсу (Картка)]
+    Decision -- Так --> Card["Сторінка курсу - Картка"]
     Card --> CheckAuth{Авторизований?}
     CheckAuth -- Ні --> Login[Форма входу]
     Login --> Card
-    CheckAuth -- Так --> Enroll[Натискає "Записатися"]
-    Enroll --> Success[Успіх: Курс у "Моїх курсах"]
+    CheckAuth -- Так --> Enroll[Натискає Записатися]
+    Enroll --> Success[Успіх: Курс у Моїх курсах]
 ```
 
 ### 1.2. Сценарій 2: Адміністратор створює новий курс
 ```mermaid
 flowchart TD
     Start([Адміністратор]) --> AdminPanel[Панель адміністратора]
-    AdminPanel --> BtnCreate[Натискає "Створити курс"]
+    AdminPanel --> BtnCreate[Натискає Створити курс]
     BtnCreate --> Form[Заповнює форму курсу]
     Form --> Validate{Валідація даних}
     Validate -- Помилка --> Form
@@ -40,7 +40,7 @@ flowchart TD
 flowchart TD
     Start([Викладач]) --> Auth[Вхід у систему]
     Auth --> Dashboard[Особистий кабінет]
-    Dashboard --> MyCourses[Розділ "Мої курси"]
+    Dashboard --> MyCourses[Розділ Мої курси]
     MyCourses --> Select[Обирає конкретний курс]
     Select --> ViewStudents[Бачить список студентів та їхні контакти]
 ```
