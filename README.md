@@ -17,6 +17,7 @@
 - [Use Case Діаграма](docs/09-use-cases.md)
 - [Діаграма класів](docs/10-class-diagram.md)
 - [Діаграми взаємодії](docs/11-interactions.md)
+- [Архітектура проєкту](docs/07-architecture/12-architecture.md)
 
 ## Статус
 Практична робота 6 — розроблено ТЗ та SRS.
