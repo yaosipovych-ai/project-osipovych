@@ -18,6 +18,7 @@
 - [Діаграма класів](docs/10-class-diagram.md)
 - [Діаграми взаємодії](docs/11-interactions.md)
 - [Архітектура проєкту](docs/07-architecture/12-architecture.md)
+- [UX/UI Дизайн](docs/09-ui/15-ui-design.md)
 
 ## Статус
 Практична робота 6 — розроблено ТЗ та SRS.
